@@ -35,6 +35,9 @@ def npair_sum(numbers, expected_result):
         Return:
             set containing pairs whose sum matches expected_result.
     """
+    if len(numbers) < 2:
+        return
+
     found = set()
     output = set()
 
