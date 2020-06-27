@@ -25,4 +25,4 @@ def nsmaller_item(array_one, array_two):
 
 
 if __name__ == '__main__':
-    print(smaller_item([3, 0, 1, 2, 22], [2, 4, 1, 7, 9]))
+    print(nsmaller_item([3, 5, 1, 2, 22], [2, 4, 1, 7, 9]))
