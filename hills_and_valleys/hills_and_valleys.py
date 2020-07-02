@@ -12,6 +12,10 @@ def solution(n):
     """
     size = len(n)
     hills_and_valleys = 0
+
+    # edge case: empty list
+    if not size:
+        return 0
     
     # edge case: only one item or all elements are equal
     if size == 1 or n.count(n[0]) == size:
@@ -22,7 +26,7 @@ def solution(n):
         previous = None if i == 0 else n[i - 1]
         current = n[i]
 
-        while previous == current and i < size - 2:
+        while previous == current and i < size - 1:
             i += 1
             previous = current
             current = n[i]
@@ -38,7 +42,6 @@ def solution(n):
             hills_and_valleys += 1
         elif previous < current > nex or previous > current < nex:
             hills_and_valleys += 1
-            
         i += 1
     return hills_and_valleys
 
@@ -53,7 +56,7 @@ if __name__ == '__main__':
     print(solution([-10,2,2,2,2]))         # 2
     print(solution([1,0,0,0,1]))           # 3
     print(solution([0,1,0,1,0]))           # 5
-
+    print(solution([]))                    # 0
 
 
 
