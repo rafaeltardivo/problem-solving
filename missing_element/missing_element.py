@@ -15,6 +15,16 @@ def missing_element(array_one, array_two):
 
 
 def missing_element_dic(array_one, array_two):
+    """Find the missing element between two sets.
+
+        Complexity: O(N).
+
+        Args:
+            array_one (list): first list of numbers to be compared.
+            array_two (list): second list of numbers to be compared.
+        Returns:
+            set containing differences.
+    """
     element_counter = dict()
     differences = list()
 
@@ -37,6 +47,6 @@ def missing_element_dic(array_one, array_two):
     return differences
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(missing_element([1, 2, 3, 4], [1, 2, 3]))
     print(missing_element_dic([1, 2, 3, 4], [1, 2, 3]))
