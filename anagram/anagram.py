@@ -10,11 +10,12 @@ def nlogn_anagram(word_one, word_two):
     Returns:
         True if they are an anagram. False if not.
     """
+    word_one = word_one.replace(" ", "")
+    word_two = word_two.replace(" ", "")
+
     if len(word_one) != len(word_two):
         return False
 
-    word_one = word_one.replace(" ", "")
-    word_two = word_one.replace(" ", "")
     return sorted(word_one) == sorted(word_two)
 
 
@@ -31,7 +32,7 @@ def n_anagram(word_one, word_two):
         True if they are an anagram. False if not.
     """
     word_one = word_one.replace(" ", "")
-    word_two = word_one.replace(" ", "")
+    word_two = word_two.replace(" ", "")
 
     if len(word_one) != len(word_two):
         return False
