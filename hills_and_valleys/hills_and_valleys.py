@@ -1,5 +1,7 @@
-def solution(n):
-    """Finds hills and valleys. The rules are:
+def n2_hills_and_valley(n):
+    """Finds hills and valleys.
+
+    The rules are:
     - The number is a valley if it is smaller than it's neighbours;
     - The number is a hills if is greater than it's neighbors;
     - If one of the neighbors is an edge, the condition is automatically
@@ -48,6 +50,7 @@ def solution(n):
     return hills_and_valleys
 
 
+"""
 if __name__ == "__main__":
     print(solution([1]))  # 1
     print(solution([1, 2]))  # 2
@@ -59,3 +62,4 @@ if __name__ == "__main__":
     print(solution([1, 0, 0, 0, 1]))  # 3
     print(solution([0, 1, 0, 1, 0]))  # 5
     print(solution([]))  # 0
+"""
