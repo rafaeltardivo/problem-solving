@@ -1,5 +1,8 @@
-def fibonacci(n):
+def n_fibonacci(n):
     """Recursively returns fibonacci sequence from n to 0.
+
+    Complexity: O(n).
+
     Args:
         n(int): number for sequence calculation.
     Returns:
@@ -7,13 +10,18 @@ def fibonacci(n):
     """
     if n <= 1:
         return n
-    return fibonacci(n - 1) + fibonacci(n - 2)
+    return n_fibonacci(n - 1) + n_fibonacci(n - 2)
 
 
 cache = dict()
-def dynamic_fibonacci(n):
+
+
+def n_dynamic_fibonacci(n):
     """Recursively returns fibonacci sequence from n to 0.
         Uses memoization for better performance.
+
+    Complexity: O(n).
+
     Args:
         n(int): number for sequence calculation.
     Returns:
@@ -23,11 +31,6 @@ def dynamic_fibonacci(n):
         return n
 
     if not cache.get(n):
-        cache[n] = dynamic_fibonacci(n-1) + dynamic_fibonacci(n-2)
+        cache[n] = n_dynamic_fibonacci(n - 1) + n_dynamic_fibonacci(n - 2)
 
     return cache[n]
-
-if __name__ == '__main__':
-    print(fibonacci(10))
-    print(dynamic_fibonacci(10))
-   
