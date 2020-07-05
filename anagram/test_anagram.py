@@ -1,9 +1,9 @@
 import unittest
 
-from anagram import nlogn_anagram, n_anagram
+from .anagram import n_anagram, nlogn_anagram
+
 
 class TestAnagram(unittest.TestCase):
-    
     def test_nlogn_length_edge_case(self):
         self.assertFalse(nlogn_anagram("len4", "len44"))
 
@@ -21,7 +21,3 @@ class TestAnagram(unittest.TestCase):
 
     def test_n_anagram(self):
         self.assertTrue(n_anagram("clint eastwood", "old west action"))
-
-
-if __name__ == '__main__':
-    unittest.main()

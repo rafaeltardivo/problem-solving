@@ -1,6 +1,6 @@
 import unittest
 
-from binary_gap import n_binary_gap
+from .binary_gap import n_binary_gap
 
 
 class TestBinaryGap(unittest.TestCase):
@@ -9,7 +9,3 @@ class TestBinaryGap(unittest.TestCase):
 
     def test_n_binary_gap(self):
         self.assertEqual(n_binary_gap(529), 4)
-
-
-if __name__ == "__main__":
-    unittest.main()

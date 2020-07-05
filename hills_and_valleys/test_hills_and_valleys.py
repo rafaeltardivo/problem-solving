@@ -1,6 +1,6 @@
 import unittest
 
-from hills_and_valleys import n2_hills_and_valley
+from .hills_and_valleys import n2_hills_and_valley
 
 
 class TestHillsAndValleys(unittest.TestCase):
