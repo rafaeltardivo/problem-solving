@@ -19,8 +19,10 @@ Every exercise should contain a docstring with its description and its asymptoti
         word_two (str): second word to be compared.
     Returns:
         True if they are an anagram. False if not.
-    """
+"""
 ```
+
+Also, **every solution should have at least one unit test** ;)
 
 ## Using pre-commit
 
