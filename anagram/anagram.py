@@ -21,7 +21,7 @@ def nlogn_anagram(word_one, word_two):
 
 def n_anagram(word_one, word_two):
     """Checks if two words could form an anagram by removing spaces,
-    sorting and comparing them.
+    and counting letters.
 
     Complexity: O(n).
 
