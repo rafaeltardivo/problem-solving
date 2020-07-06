@@ -48,18 +48,3 @@ def n2_hills_and_valley(n):
             hills_and_valleys += 1
         i += 1
     return hills_and_valleys
-
-
-"""
-if __name__ == "__main__":
-    print(solution([1]))  # 1
-    print(solution([1, 2]))  # 2
-    print(solution([1, 1, 1]))  # 1
-    print(solution([1, 2, 1]))  # 3
-    print(solution([1, 2, 6]))  # 2
-    print(solution([1, 2, 3, 4, 4, 3, 4, 4, 5, 6]))  # 4
-    print(solution([-10, 2, 2, 2, 2]))  # 2
-    print(solution([1, 0, 0, 0, 1]))  # 3
-    print(solution([0, 1, 0, 1, 0]))  # 5
-    print(solution([]))  # 0
-"""
