@@ -22,7 +22,7 @@ Every exercise should contain a docstring with its description and its asymptoti
 """
 ```
 
-Also, **every solution should have at least one unit test** ;)
+Also, **every solution should have at least one unit test** ;).
 
 ## Using pre-commit
 
